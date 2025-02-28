@@ -1,4 +1,7 @@
 # minitools
 
 ## Simple Path Manager (spm)
-spm is a command-line tool for managing the Windows PATH variable, allowing you to list (spm list), add (spm add <path>), and remove (spm remove <index>) paths with support for both system (admin required) and user PATHs; compile it with build.bat into bin\spm.exe, run as admin for system changes, and note that changes persist in the registry but may need a new shell to take effect.
+Manage Windows PATH with `bin\spm.exe`. Run as admin for system `PATH`, otherwise affects user `PATH`. Changes persist in registry.
+- `spm list`: Show all PATH entries with indexes
+- `spm add <path>`: Add relative (e.g., `.`) or absolute (e.g., `C:\Test`) path
+- `spm remove <index>`: Remove path by index from list
